@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 export default class ProductItem extends Component {
   render() {
+   let {product} = this.props;
+   console.log(this.props.product);
     return (
         <div className="product-item">
         <div className="item-title d-flex justify-content-between">
@@ -15,9 +17,10 @@ export default class ProductItem extends Component {
           <p>NEW</p>
         </div>
         <div className="img-item">
-          <img src="./Pictures/chitietsanpham/img-1.jpg" alt="" />
+          {/* <img src="./Pictures/chitietsanpham/img-1.jpg" alt="" /> */}
+          <img src='' alt="" />
         </div>
-        <p className="text-center">Trà Ô long</p>
+        <p className="text-center">{product.name}</p>
         <div className="intro-item d-flex justify-content-between flex-wrap">
           <p>
             <b>50,000</b>VND

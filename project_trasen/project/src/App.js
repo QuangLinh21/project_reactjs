@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Menu from "./components/Menu";
+import Index from "./components/Index";
 import Introducer from "./components/Introducer";
 import ListProduct from "./components/ListProduct";
 import Cart from "./components/Cart";
@@ -7,22 +8,26 @@ import Banner from "./components/Banner";
 import NewProduct from "./components/NewProduct";
 import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <Menu />
-        <Routes>
-          <Route path="/introduce" element={<Introducer />}></Route>
-          <Route path="/list-product" element={<ListProduct />}></Route>
-          <Route path="/new" element={""}></Route>
-          <Route path="/contact" element={""}></Route>
-          <Route path="/cart" element={<Cart />}></Route>
-        </Routes>
-      </BrowserRouter>
-      <Footer/>
-    </div>
-  );
-}
+import React, { Component } from "react";
 
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <Menu />
+          <Routes>
+            <Route path="/" element={<Index></Index>}></Route>
+            <Route path="/introduce" element={<Introducer />}></Route>
+            <Route path="/list-product" element={<ListProduct />}></Route>
+            <Route path="/new" element={""}></Route>
+            <Route path="/contact" element={""}></Route>
+            <Route path="/cart" element={<Cart />}></Route>
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </div>
+    );
+  }
+}
 export default App;

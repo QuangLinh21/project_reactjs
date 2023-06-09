@@ -20,7 +20,9 @@ function Menu() {
         <div className="col-md-7">
           <nav>
             <ul className="nav-parent">
-              
+            <li>
+                <Link to={"/"}>TRANG CHỦ</Link>
+              </li>
               <li>
                 <Link to={"/introduce"}>GIỚI THIỆU</Link>
               </li>
@@ -28,13 +30,10 @@ function Menu() {
                 <Link to={"/list-product"}>SẢN PHẨM</Link>
               </li>
               <li>
-              <Link to={"/new"}>TIN TỨC</Link>
-              </li>
-              <li>
               <Link to={"/contact"}>LIÊN HỆ</Link>
               </li>
               <li>
-              <Link to={"/cart"}>GIỎ HÀNG</Link>
+              <Link to={"/cart"}><i class="fa-solid fa-cart-shopping"></i></Link>
               </li>
             </ul>
           </nav>
