@@ -165,9 +165,62 @@ a{
 }
 
 /* -----------login----------------- */
-.box-content form{
-   
-}
+
 #chitiet .common-section .sp img{
    width: 100%;
 }
+.slider {
+    width: 70%;
+
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+  }
+
+  .slick-slide img {
+
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+  #chitiet .common-section .sp img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .link {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+  }
+
+  .intro-product {
+    position: absolute;
+    top: 25%;
+    left: 12%;
+  }
+
+  #img-tra {
+    margin-left: -50px;
+  }

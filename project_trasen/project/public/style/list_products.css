@@ -3,6 +3,11 @@
    height: auto;
    position: relative;
 }
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 #banner h3{
     position: absolute;
     top: 35%;
@@ -30,10 +35,13 @@
     margin: 20px;
     cursor: pointer;
 }
-.product-item .item-title .box-star{
+.product-item .item-title .box-star .star{
    font-size: 10px;
-   color: #69922B;
+   color: #779D40;
 }
+.product-item .item-title .box-star {
+    font-size: 10px;
+ }
 .product-item .item-title p{
     font-size: 12px;
     padding: 3px;
