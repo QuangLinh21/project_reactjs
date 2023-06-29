@@ -65,3 +65,6 @@
 .add-address{
     text-align: justify;
 }
+table tr td{
+    vertical-align: center;
+}

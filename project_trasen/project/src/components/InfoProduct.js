@@ -15,9 +15,9 @@ function InfoProduct({renderProduct,onclickAdd}) {
           <div className="intro-product">
           <div className="container-fluid">
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-5">
                   <section className="vertical-center slider">
-                    <div>
+                    <div className='ms-3'>
                       <img src={renderProduct.img} width={'350px'} className='ms-3'/>
                     </div>
                     {/* <div>
@@ -28,7 +28,7 @@ function InfoProduct({renderProduct,onclickAdd}) {
                     </div> */}
                   </section>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-5">
                   <h4>{renderProduct.name}</h4>
                   <div className="d-flex mb-2">
                     <h5 className="mt-2 me-3">
