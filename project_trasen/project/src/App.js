@@ -7,6 +7,7 @@ import Cart from "./components/Cart";
 import Footer from "./components/Footer";
 import InfoProduct from "./components/InfoProduct";
 import React, { useState } from "react";
+import Contact from "./components/Contact";
 function App() {
   let initialProduct = {
     id: 0,
@@ -45,8 +46,7 @@ function App() {
             path="/list-product"
             element={<ListProduct onclickpro={handleClick} />}
           ></Route>
-          <Route path="/new" element={""}></Route>
-          <Route path="/contact" element={""}></Route>
+          <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/cart" element={<Cart renderProduct={product}/>}></Route>
           <Route path="/infoproduct" element={<InfoProduct renderProduct={product} onclickAdd={handleAdd}/>}></Route>
         </Routes>

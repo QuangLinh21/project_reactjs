@@ -1,0 +1,35 @@
+#footer{
+    margin-top: -130px;
+}
+#contact{
+    position: relative;
+}
+#contact .box-contact{
+    position: absolute;
+    top: 10%;
+    left: 57%;
+}
+#contact .box-contact form input{
+    width: 350px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #899A29;
+    outline: none;
+}
+#contact .box-contact form textarea{
+    width: 350px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid #899A29;
+    outline: none;
+}
+#contact .box-contact form button{
+    background: #899A29;
+    color: aliceblue;
+    padding: 10px;
+    width: 100px;
+    border: none;
+}
+#contact .box-contact form button:hover{
+    background: #a8b753;
+}
